@@ -1,0 +1,30 @@
+apply plugin: 'java'
+apply plugin: 'war'
+
+repositories {
+    mavenCentral()
+}
+compileJava.options.encoding = "UTF-8"
+compileTestJava.options.encoding = "UTF-8"
+
+dependencies {
+    testCompile group: 'junit', name: 'junit', version: '4.12'
+    providedCompile 'javax.servlet:javax.servlet-api:4.0.0'
+}
+
+war {
+    archiveName = 'develop.war'
+}
+
+//task hW {
+//    description = "タスクの説明をここに書きます"
+//
+//    doLast {
+//        println "Hello, world!!"
+//    }
+//
+//}
+//
+//wrapper {
+//    gradleVersion = '4.9'
+//}
