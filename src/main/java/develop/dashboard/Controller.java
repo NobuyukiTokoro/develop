@@ -12,6 +12,7 @@ public class Controller extends HttpServlet {
   public void doGet(HttpServletRequest request, HttpServletResponse response) throws IOException {
     Action action = new Action();
     response.getWriter().println(action.getClass().getPackage().getName());
+    response.getWriter().println(action.getClass());
 
   }
 }

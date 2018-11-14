@@ -9,7 +9,11 @@
 </head>
 <body>
 
-<h1>雛形/h1>
+<form action="login" method="POST">
+<p>LOGIN-ID<input type="text" name="login_id"></p>
+<p>PASSWORD<input type="password" name="password"></p>
+<p><input type="submit" value="ログイン"></p>
+</form>
 
 
 </body>
